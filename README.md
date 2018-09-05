@@ -1,5 +1,5 @@
 
-# Header1 # Superball 
+# Superball 
 
 Superball is a text based terminal app that loosely simulates soccer or ruby. The player’s objective is to get that ball from one side of the field to the other, or more accurately 50 meters from the halfway point where they started. The player can select from a number of predefined moves. The effectiveness of the player’s selected move is determined by where they are located on the field and the outcome of a random number generator. 
 
@@ -29,7 +29,7 @@ Liam: https://github.com/liamgkuhn/A1-1
 
 Workflow Diagram
 
-![alt text]()
+![alt text](https://github.com/illinformed1/A1-1/blob/master/workflowdiagram.png)
 
 Brainstorming 
 
