@@ -16,6 +16,7 @@ class Text
         puts "                            Welcome to the Game of Games:"
         puts "                                      SUPERBALL"
         line
+        puts "              Simply make it to the 100m mark, dropping to 0m results in a loss."
         
         puts "                                Press Enter to Start"
         gets
