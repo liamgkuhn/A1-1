@@ -21,22 +21,22 @@ class Text
         gets
         puts "                                       Lets Go!"
         
-        sleep(1)
+        #sleep(1)
         system("clear")
         line
         puts "                                New Game Initializing"
         line
-        sleep(1)
+        #sleep(1)
         system("clear")
         lineFlat
         puts "                                New Game Initializing."
         lineFlat
-        sleep(1)
+        #sleep(1)
         system("clear")
         line
         puts "                                New Game Initializing.."
         line
-        sleep(1)
+        #sleep(1)
         system("clear")
         lineFlat
         puts "                                New Game Initializing..."
@@ -48,7 +48,7 @@ class Text
     end
 
     def gameStartMoveText
-        puts "Pick your starting play Piiiimp"
+        puts "Pick your starting play Player"
         puts "Press 1 to Run, 2 to Dank Spiral, 3 to Dance-On-Em"
     end
 
@@ -78,7 +78,7 @@ class Text
     end
 
     def backPositionOptions
-        puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Dank Spiral, 5 to Paul Walker (Risky)"
+        puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Dank Spiral, 5 to Hail Mary (Risky)"
     end
     
     def middlePositionOptions

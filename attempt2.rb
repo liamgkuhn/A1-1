@@ -1,3 +1,12 @@
+
+#TO DO
+#Write Code for Defense
+#Implement new move methods
+#Alter values of distance travelled
+
+
+
+
 require_relative "moveclass.rb"
 require_relative "textclass.rb"
 
@@ -21,12 +30,12 @@ if userInput == 1
 
 elsif
     userInput == 2
-    puts "Your new position is #{position += playerMove.kick(0)}"
+    puts "Your new position is #{position += playerMove.dankSpiral(0)}"
 
 elsif userInput == 3
     puts "Your new position is #{position += playerMove.dance(0)}"
 end
-sleep(2)
+sleep(3)
 system("clear")
 
 #Defining the game loop and the exit conditon to the final victory/loss screen
@@ -58,6 +67,11 @@ while gamePlaying == true do
 
                     #Calls the dodge method + calculates it + prints to screen
                     puts "Your new position is #{position += playerMove.dodge(0)}"
+
+                    elsif userInput == 3
+
+                    #Calls the bodyslam method + calculates it + prints to screen
+                    puts "Your new position"
                 end
 
             #Middle Position    
