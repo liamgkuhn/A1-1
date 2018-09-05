@@ -33,11 +33,15 @@ Workflow Diagram
 
 Brainstorming 
 
-![alt text]() 
+![alt text](https://github.com/illinformed1/A1-1/blob/master/brainstorm1.jpg) 
+![alt text](https://github.com/illinformed1/A1-1/blob/master/brainstorming2.jpg)
+![alt text](https://github.com/illinformed1/A1-1/blob/master/evenmorebrainstorming.jpg) 
 
 Trello boards 
 
-![alt text]()
+status of our Trello board at the time of upload
+
+![alt text](https://github.com/illinformed1/A1-1/blob/master/Trelloss.png)
 
 
 
