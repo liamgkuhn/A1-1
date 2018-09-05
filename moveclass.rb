@@ -126,9 +126,7 @@ class Move
         return position
     end
 
-    def test()
-        puts "asah dudes"
-    end
+    
 
 
 end

@@ -71,7 +71,17 @@ while gamePlaying == true do
                     elsif userInput == 3
 
                     #Calls the bodyslam method + calculates it + prints to screen
-                    puts "Your new position"
+                    puts "Your new position is #{position += playerMove.bodyslam(0)}"
+
+                    elsif userInput == 4
+
+                    #Calls the dankSpiral method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.dankSpiral(0)}"
+
+                    elsif userInput == 5
+
+                    #Calls the hailMary method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.hailMary(0)}"
                 end
 
             #Middle Position    
@@ -92,6 +102,21 @@ while gamePlaying == true do
 
                     #Calls the dodge method + calculates it + prints to screen
                     puts "Your new position is #{position += playerMove.dodge(0)}"
+
+                    elsif userInput == 3
+
+                    #Calls the bodyslam method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.bodyslam(0)}"
+
+                    elsif userInput == 4
+
+                    #Calls the takeaNap method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.takeaNap(0)}"
+
+                    elsif userInput == 5
+
+                    #Calls the sitOnFence method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.sitOnFence(0)}"
                 end
 
             #Forward Position   
@@ -112,6 +137,21 @@ while gamePlaying == true do
 
                     #Calls the dodge method + calculates it + prints to screen
                     puts "Your new position is #{position += playerMove.dodge(0)}"
+
+                    elsif userInput == 3
+
+                    #Calls the bodyslam method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.bodyslam(0)}"
+
+                    elsif userInput == 4
+
+                    #Calls the takeaNap method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.dance(0)}"
+
+                    elsif userInput == 5
+
+                    #Calls the sitOnFence method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.kobe(0)}"
                 end
 
 
