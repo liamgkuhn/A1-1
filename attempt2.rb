@@ -15,8 +15,8 @@ require_relative "textclass.rb"
 text = Text.new()
 playerMove = Move.new()
 position = 50
-ballPossession = true
-gamePlaying = true
+
+
 moveCount = 10
 goals = 0
 
@@ -37,15 +37,10 @@ elsif
 elsif userInput == 3
     puts "Your new position is #{position += playerMove.dance(0)}m"
 end
-sleep(3)
+#sleep(3)
 system("clear")
 
-#Defining the game loop and the exit conditon to the final victory/loss screen
-while gamePlaying == true do
-
-
-    
-    
+#Defining the game loop 
         while position > 0 && position < 100 do
             #while positions 
             #Give player options to move    
@@ -168,11 +163,11 @@ while gamePlaying == true do
             
            
         end
-        break
+        
      
     
         
-end
+
 
 #Win and loss Conditions
 if position >= 100
