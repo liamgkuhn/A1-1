@@ -5,12 +5,20 @@ class Move
 
     def run(position)
         if ((rand() + 0.1) > 0.5)
-        position += 10
+        position += 7
         puts "Move Succesful"
+
+        elsif ((rand() + 0.1 > 0.9))
+            position += 10
+            puts "Yasssss Queeen, you werked it"
         
+        elsif ((rand() + 0.1 < 0.2))
+            position += 0
+            #ball lost code
+            puts "Ya done goofed son, no ball for you"
         
         else  
-            position -= 10
+            position -= 5
             puts "Move Failed"
         end
         return position

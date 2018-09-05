@@ -39,25 +39,69 @@ while gamePlaying == true do
             #while positions 
             #Give player options to move    
             text.enemyMoveText()
-         
-            puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Lebron"
-            #Offensive Move Selection
-            userInput = gets.chomp.to_i
 
-            #Clears screen after every input
-            system("clear")
-            #if position < 33.33       
-            if userInput == 1
+            #Back position
+            if position <= 33.33
+                puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Lebron"
+                #Offensive Move Selection
+                userInput = gets.chomp.to_i
 
-                #Calls the run method + calculates it + prints to screen
-                puts "Your new position is #{position += playerMove.run(0)}"
+                #Clears screen after every input
+                system("clear")
+                   
+                if userInput == 1
+
+                    #Calls the run method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.run(0)}"
         
-                elsif userInput == 2
+                    elsif userInput == 2
 
-                #Calls the dodge method + calculates it + prints to screen
-                puts "Your new position is #{position += playerMove.dodge(0)}"
-            end
-          
+                    #Calls the dodge method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.dodge(0)}"
+                end
+
+            #Middle Position    
+            elsif position > 33.3 && position <= 66.6
+                puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Lebron"
+                #Offensive Move Selection
+                userInput = gets.chomp.to_i
+
+                #Clears screen after every input
+                system("clear")
+                   
+                if userInput == 1
+
+                    #Calls the run method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.run(0)}"
+        
+                    elsif userInput == 2
+
+                    #Calls the dodge method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.dodge(0)}"
+                end
+                
+            #Back position   
+            elsif position > 66.6 
+                puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Lebron"
+                #Offensive Move Selection
+                userInput = gets.chomp.to_i
+
+                #Clears screen after every input
+                system("clear")
+                   
+                if userInput == 1
+
+                    #Calls the run method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.run(0)}"
+        
+                    elsif userInput == 2
+
+                    #Calls the dodge method + calculates it + prints to screen
+                    puts "Your new position is #{position += playerMove.dodge(0)}"
+                end
+
+
+            end  
             
            
         end

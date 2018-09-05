@@ -24,31 +24,31 @@ class Text
         sleep(1)
         system("clear")
         line
-        puts "New Game Initializing"
+        puts "                                New Game Initializing"
         line
         sleep(1)
         system("clear")
         lineFlat
-        puts "New Game Initializing."
+        puts "                                New Game Initializing."
         lineFlat
         sleep(1)
         system("clear")
         line
-        puts "New Game Initializing.."
+        puts "                                New Game Initializing.."
         line
         sleep(1)
         system("clear")
         lineFlat
-        puts "New Game Initializing..."
+        puts "                                New Game Initializing..."
         lineFlat
         #sleep(1)
         system("clear")
-        puts "hi fam"
+        
 
     end
 
     def gameStartMoveText
-        puts "Pick your starting play piiiiimp"
+        puts "Pick your starting play Piiiimp"
         puts "Press 1 to Run, 2 to Kick, 3 to Dance-On-Em"
     end
 
