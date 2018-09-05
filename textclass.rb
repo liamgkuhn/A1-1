@@ -21,22 +21,22 @@ class Text
         gets
         puts "                                       Lets Go!"
         
-        #sleep(1)
+        sleep(1)
         system("clear")
         line
         puts "New Game Initializing"
         line
-        #sleep(1)
+        sleep(1)
         system("clear")
         lineFlat
         puts "New Game Initializing."
         lineFlat
-        #sleep(1)
+        sleep(1)
         system("clear")
         line
         puts "New Game Initializing.."
         line
-        #sleep(1)
+        sleep(1)
         system("clear")
         lineFlat
         puts "New Game Initializing..."

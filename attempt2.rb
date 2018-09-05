@@ -13,7 +13,21 @@ goals = 0
 #Welcome Screen
 text.welcomeText()
 text.gameStartMoveText()
+#Starting game options
+userInput = gets.chomp.to_i
+system("clear")
+if userInput == 1
+    puts "Your new position is #{position += playerMove.run(0)}"
 
+elsif
+    userInput == 2
+    puts "Your new position is #{position += playerMove.kick(0)}"
+
+elsif userInput == 3
+    puts "Your new position is #{position += playerMove.dance(0)}"
+end
+sleep(2)
+system("clear")
 
 #Defining the game loop and the exit conditon to the final victory/loss screen
 while gamePlaying == true do
@@ -22,29 +36,32 @@ while gamePlaying == true do
     if ballPossession == true
     
         while position > 0 && position < 100 do
-            while positions     
+            #while positions 
+            #Give player options to move    
+            text.enemyMoveText()
+         
+            puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Lebron"
+            #Offensive Move Selection
+            userInput = gets.chomp.to_i
+
+            #Clears screen after every input
+            system("clear")
+            #if position < 33.33       
+            if userInput == 1
+
+                #Calls the run method + calculates it + prints to screen
+                puts "Your new position is #{position += playerMove.run(0)}"
         
-        #Offensive Move Selection
-        userInput = gets.chomp.to_i
+                elsif userInput == 2
 
-        #Clears screen after every input
-        system("clear")
-                
-        if userInput == 1
-
-            #Calls the run method + calculates it + prints to screen
-            puts "Your new position is #{position += playerMove.run(0)}"
-        
-        elsif userInput == 2
-
-            #Calls the dodge method + calculates it + prints to screen
-            puts "Your new positions is #{position += playerMove.dodge(0)}"
-        end
+                #Calls the dodge method + calculates it + prints to screen
+                puts "Your new position is #{position += playerMove.dodge(0)}"
+            end
           
-        text.enemyMoveText()
-        #Give player options to move
-        puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Lebron"
-        
+            
+           
+        end
+        break
     end
     #This is where the defense moves go
     
@@ -62,7 +79,7 @@ else
 end
 
 
-end
+#end
 
 
 #making sure it works still
