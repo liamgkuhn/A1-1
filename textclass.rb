@@ -49,7 +49,7 @@ class Text
 
     def gameStartMoveText
         puts "Pick your starting play Piiiimp"
-        puts "Press 1 to Run, 2 to Kick, 3 to Dance-On-Em"
+        puts "Press 1 to Run, 2 to Dank Spiral, 3 to Dance-On-Em"
     end
 
     def victoryText
@@ -75,6 +75,18 @@ class Text
 
     def lostBall
         puts "What a whiff, your player was sent to the graveyard."
+    end
+
+    def backPositionOptions
+        puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Dank Spiral, 5 to Paul Walker (Risky)"
+    end
+    
+    def middlePositionOptions
+        puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Take a Nap, 5 to Sit on the Fence "
+    end
+
+    def forwardPositionOptions
+        puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Dance-On-Em, 5 to Kobe (Risky)"
     end
 
     

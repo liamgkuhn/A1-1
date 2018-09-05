@@ -36,7 +36,7 @@ class Move
         return position
     end
 
-    def kick(position)
+    def dankPass(position)
         if ((rand() + 0.6) > 0.5)
             position += 5
             puts "Move Successful"
@@ -50,6 +50,13 @@ class Move
     def dance(position)
         puts "Move was super successful"
         puts "No ground gained but opponents have been staunched"
+        return position
+    end
+
+    def lebron(position)
+        puts "You know I had to do it to 'em"
+        puts "Opponents heavily staunched"
+        puts "Game freaking over man"
         return position
     end
 

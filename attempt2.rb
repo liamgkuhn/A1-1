@@ -40,9 +40,9 @@ while gamePlaying == true do
             #Give player options to move    
             text.enemyMoveText()
 
-            #Back position
+            #Back Position
             if position <= 33.33
-                puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Lebron"
+                text.backPositionOptions()
                 #Offensive Move Selection
                 userInput = gets.chomp.to_i
 
@@ -62,7 +62,7 @@ while gamePlaying == true do
 
             #Middle Position    
             elsif position > 33.3 && position <= 66.6
-                puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Lebron"
+                text.middlePositionOptions()
                 #Offensive Move Selection
                 userInput = gets.chomp.to_i
 
@@ -79,10 +79,10 @@ while gamePlaying == true do
                     #Calls the dodge method + calculates it + prints to screen
                     puts "Your new position is #{position += playerMove.dodge(0)}"
                 end
-                
-            #Back position   
+
+            #Forward Position   
             elsif position > 66.6 
-                puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Lebron"
+                text.forwardPositionOptions()
                 #Offensive Move Selection
                 userInput = gets.chomp.to_i
 
@@ -116,7 +116,7 @@ if position >= 100
     gamePlaying = false
     text.victoryText()
 
-else 
+elsif position <= 0
     text.lossText()
     gamePlaying = false
 
