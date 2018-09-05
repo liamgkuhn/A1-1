@@ -9,12 +9,19 @@ class Move
         test = true
         
         else  
-            test = false
+            puts "Move Failed"
         end
         puts position
         puts test
-    
-    
+    end
+
+    def dodge(position)
+        if ((rand() + 0.5) > 0.5)
+            position += 5
+            puts position
+        else
+            puts "Move Failed"
+        end
     end
 
     def test()

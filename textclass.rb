@@ -7,6 +7,10 @@ class Text
         puts "-" * 100
     end
 
+    def lineFlat
+        puts "/" * 100
+    end
+
     def welcomeText
         line
         puts "                            Welcome to the Game of Games:"
@@ -17,28 +21,46 @@ class Text
         gets
         puts "                                       Lets Go!"
         
-        sleep(1)
+        #sleep(1)
         system("clear")
+        line
         puts "New Game Initializing"
-        sleep(1)
+        line
+        #sleep(1)
         system("clear")
+        lineFlat
         puts "New Game Initializing."
-        sleep(1)
+        lineFlat
+        #sleep(1)
         system("clear")
+        line
         puts "New Game Initializing.."
-        sleep(1)
+        line
+        #sleep(1)
         system("clear")
+        lineFlat
         puts "New Game Initializing..."
-        sleep(1)
+        lineFlat
+        #sleep(1)
         system("clear")
         puts "hi fam"
 
+    end
+
+    def gameStartMoveText
+        puts "Pick your starting play piiiiimp"
     end
 
     def victoryText
         line
         puts "That was the best game I've ever seen kid, your a G."
         puts "You get one thumb up for your dedication."
+        line
+    end
+
+    def lossText
+        line
+        puts "You lost chump"
         line
     end
 
@@ -51,7 +73,7 @@ class Text
     end
 
     def lostBall
-        puts "What a whiff, your player was sent off in disgrace."
+        puts "What a whiff, your player was sent to the graveyard."
     end
 
     
