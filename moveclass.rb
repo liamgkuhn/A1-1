@@ -2,7 +2,9 @@ class Move
 
     def initialize()
     end
-
+    
+    #Most classes accept an int, run it through a random number gen + possible modifier 
+    #and have a string returned depending on the result
     def run(position)
         if (rand() > 0.7)
         position += 5
@@ -143,8 +145,6 @@ class Move
         end
         return position
     end
-
-  
 
 
 end

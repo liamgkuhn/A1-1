@@ -1,5 +1,5 @@
 class Text
-
+#This class is solely for text prompts
     def initialize()
     end
 
@@ -22,27 +22,27 @@ class Text
         gets
         puts "                                       Lets Go!"
         
-        #sleep(1)
+        sleep(1)
         system("clear")
         line
         puts "                                New Game Initializing"
         line
-       # sleep(1)
+        sleep(1)
         system("clear")
         lineFlat
         puts "                                New Game Initializing."
         lineFlat
-        #sleep(1)
+        sleep(1)
         system("clear")
         line
         puts "                                New Game Initializing.."
         line
-        #sleep(1)
+        sleep(1)
         system("clear")
         lineFlat
         puts "                                New Game Initializing..."
         lineFlat
-        #sleep(1)
+        sleep(1)
         system("clear")
         
 
@@ -70,12 +70,7 @@ class Text
         puts "You've got a threat incoming, show us your moves."
     end
 
-    def closeToGoal
-        puts "You're close to goal pal, do something special."
-    end
-
     
-
     def backPositionOptions
         puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Dank Spiral, 5 to Hail Mary (Risky)"
     end

@@ -1,13 +1,3 @@
-
-#TO DO
-#Write Code for Defense
-#Implement new move methods
-#Alter values of distance travelled
-#Testing code
-
-
-
-
 require_relative "moveclass.rb"
 require_relative "textclass.rb"
 
@@ -17,8 +7,7 @@ playerMove = Move.new()
 position = 50
 
 
-moveCount = 10
-goals = 0
+
 
 #Welcome Screen
 text.welcomeText()
@@ -37,12 +26,12 @@ elsif
 elsif userInput == 3
     puts "Your new position is #{position += playerMove.dance(0)}m"
 end
-#sleep(3)
+sleep(3)
 system("clear")
 
 #Defining the game loop 
         while position > 0 && position < 100 do
-            #while positions 
+             
             #Give player options to move    
             text.enemyMoveText()
 
@@ -149,12 +138,12 @@ system("clear")
 
                     elsif userInput == 4
 
-                    #Calls the takeaNap method + calculates it + prints to screen
+                    #Calls the dance method + calculates it + prints to screen
                     puts "Your new position is #{position += playerMove.dance(0)}m"
 
                     elsif userInput == 5
 
-                    #Calls the sitOnFence method + calculates it + prints to screen
+                    #Calls the kobe method + calculates it + prints to screen
                     puts "Your new position is #{position += playerMove.kobe(0)}m"
                 end
 
@@ -166,9 +155,6 @@ system("clear")
         
      
     
-        
-
-
 #Win and loss Conditions
 if position >= 100
     gamePlaying = false
@@ -181,9 +167,6 @@ elsif position <= 0
 end
 
 
-#end
 
-
-#making sure it works still
 
 
