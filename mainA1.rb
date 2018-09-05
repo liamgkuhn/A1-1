@@ -16,12 +16,13 @@ text.gameStartMoveText()
 userInput = gets.chomp.to_i
 system("clear")
 if userInput == 1 
+    
     puts "Your new position is #{position += playerMove.run(0)}m"
 
 elsif
     userInput == 2
     puts "Your new position is #{position += playerMove.dankSpiral(0)}m"
-    ballPossession = false
+    
 
 elsif userInput == 3
     puts "Your new position is #{position += playerMove.dance(0)}m"
