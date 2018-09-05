@@ -4,15 +4,15 @@ class Move
     end
 
     def run(position)
-        if ((rand() + 0.07) > 0.5)
-        position += 7
+        if (rand() > 0.7)
+        position += 5
         puts "Solid run."
 
-        elsif ((rand() + 0.07 > 0.9))
+        elsif (rand() > 0.9)
             position += 7
             puts "Yasssss Queeen, you werked it"
         
-        elsif ((rand() + 0.07 < 0.1))
+        elsif (rand() < 0.2)
             position += 0
             puts "You more felt like standing still"
         
@@ -25,15 +25,15 @@ class Move
     end
 
     def dodge(position)
-        if ((rand() + 0 ) > 0.9)
-            position += 5
+        if ((rand() + 0.07 ) > 0.5)
+            position += 4
             puts "Dodge, Duck, Dip, Dive and ... Dodge"
 
-        elsif ((rand() + 0) > 0.9)
+        elsif ((rand() + 0.07) > 0.9)
             position += 8
             puts "Gotta go fast, opponent deftly staunced on."
 
-        elsif ((rand() + 0) > 0.1)
+        elsif (rand() < 0.1)
             position -= 8
             puts "Opponent absolutely just destroys you."
             puts "Ground and pride lost. Continue play."
@@ -45,17 +45,17 @@ class Move
     end
 
     def dankSpiral(position)
-        if ((rand() + 0.1) > 0.5)
-            position += 15
+        if ((rand() + 0.07) > 0.5)
+            position += 10
             puts "Call yourself Ricky Ponting with a throw like that"
         
-        elsif ((rand() + 0.1) > 9)
+        elsif ((rand() + 0.07) > 9)
             position += 15
             puts "Eyes gaze to sky as the ball eclipses the sun before crashing back down in a fiery blaze"
             puts "Very Nice"
 
-            #lost ball scenario
-        elsif ((rand() + 0.1) < 1)
+            
+        elsif (rand() < 0.1)
             position -=10
             
             puts "You fumbled the ball and lost ground."
@@ -82,15 +82,15 @@ class Move
     end
 
     def bodyslam(position)
-        if ((rand() + 0.2) > 0.5)
+        if ((rand() + 0.1) > 0.5)
             position += 5
             puts "Knocked them out of the way with ease"
 
-        elsif ((rand() + 0.2) > 0.5)
-                position += 5
+        elsif ((rand() + 0.1) > 0.9)
+                position += 8
                 puts "You laugh in glory as the broken bodies of your foes surround you."
 
-        elsif ((rand() + 0.2) > 0.5)
+        elsif (rand() < 0.1)
                 position -= 10
                 puts "You bodyslammed your own teammate. The crowd is shocked. You are booed back"
         else
@@ -101,7 +101,7 @@ class Move
     end
 
     def hailMary(position)
-        if ((rand() + 0.2) > 0.5)
+        if ((rand() + 0.1) > 0.5)
             position += 50
             puts "Pressed right to the edge, you focus your zen and leap a tall building in a single bound."
         else
