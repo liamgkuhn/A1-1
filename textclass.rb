@@ -49,6 +49,7 @@ class Text
 
     def gameStartMoveText
         puts "Pick your starting play piiiiimp"
+        puts "Press 1 to Run, 2 to Kick, 3 to Dance-On-Em"
     end
 
     def victoryText

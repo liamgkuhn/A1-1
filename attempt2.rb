@@ -14,6 +14,7 @@ goals = 0
 text.welcomeText()
 text.gameStartMoveText()
 
+
 #Defining the game loop and the exit conditon to the final victory/loss screen
 while gamePlaying == true do
 
@@ -21,24 +22,34 @@ while gamePlaying == true do
     if ballPossession == true
     
         while position > 0 && position < 100 do
-            
+            while positions     
         
         #Offensive Move Selection
         userInput = gets.chomp.to_i
+
+        #Clears screen after every input
+        system("clear")
+                
         if userInput == 1
-            
+
+            #Calls the run method + calculates it + prints to screen
             puts "Your new position is #{position += playerMove.run(0)}"
         
         elsif userInput == 2
+
+            #Calls the dodge method + calculates it + prints to screen
             puts "Your new positions is #{position += playerMove.dodge(0)}"
         end
           
         text.enemyMoveText()
+        #Give player options to move
+        puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Lebron"
         
     end
     #This is where the defense moves go
     
 end
+
 #Win and loss Conditions
 if position >= 100
     gamePlaying = false
