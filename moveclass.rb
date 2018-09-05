@@ -50,12 +50,18 @@ class Move
             position += 15
             puts "Move Successful"
         
-        elsif ((rand() + 0.1) > 0.8)
+        elsif ((rand() + 0.1) > 9)
             position += 15
             puts "Eyes gaze to sky as the ball eclipses the sun before crashing back down in a fiery blaze"
             puts "Very Nice"
 
-        #possible elsif lose ball statement
+            #lost ball scenario
+        elsif ((rand() + 0.1) < 1)
+            position -=10
+            
+            puts "You fumbled the ball and lost ground"
+            
+
         else
             position -= 5
             puts "Move Failed"
@@ -126,7 +132,16 @@ class Move
         return position
     end
 
-    
+    def slam(position)
+        if ((rand() + 0.2) > 0.5)
+            position += 5
+            puts "Move Successful"
+        else
+            position -= 5
+            puts "Move Failed"
+        end
+        return position
+    end
 
 
 end

@@ -31,6 +31,7 @@ if userInput == 1
 elsif
     userInput == 2
     puts "Your new position is #{position += playerMove.dankSpiral(0)}"
+    ballPossession = false
 
 elsif userInput == 3
     puts "Your new position is #{position += playerMove.dance(0)}"
@@ -41,8 +42,8 @@ system("clear")
 #Defining the game loop and the exit conditon to the final victory/loss screen
 while gamePlaying == true do
 
-    #Defining where gameplay switches from offense to defense
-    if ballPossession == true
+
+    
     
         while position > 0 && position < 100 do
             #while positions 
@@ -160,9 +161,9 @@ while gamePlaying == true do
            
         end
         break
-    end
-    #This is where the defense moves go
+     
     
+        
 end
 
 #Win and loss Conditions

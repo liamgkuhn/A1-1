@@ -21,27 +21,27 @@ class Text
         gets
         puts "                                       Lets Go!"
         
-        sleep(1)
+        #sleep(1)
         system("clear")
         line
         puts "                                New Game Initializing"
         line
-        sleep(1)
+       # sleep(1)
         system("clear")
         lineFlat
         puts "                                New Game Initializing."
         lineFlat
-        sleep(1)
+        #sleep(1)
         system("clear")
         line
         puts "                                New Game Initializing.."
         line
-        sleep(1)
+        #sleep(1)
         system("clear")
         lineFlat
         puts "                                New Game Initializing..."
         lineFlat
-        sleep(1)
+        #sleep(1)
         system("clear")
         
 
@@ -61,7 +61,7 @@ class Text
 
     def lossText
         line
-        puts "You lost chump"
+        puts "You lost chump."
         line
     end
 
@@ -73,9 +73,7 @@ class Text
         puts "You're close to goal pal, do something special."
     end
 
-    def lostBall
-        puts "What a whiff, your player was sent to the graveyard."
-    end
+    
 
     def backPositionOptions
         puts "Press 1 to Run, 2 to Dodge, 3 to BodySlam, 4 to Dank Spiral, 5 to Hail Mary (Risky)"
