@@ -21,7 +21,7 @@ while gamePlaying == true do
     if ballPossession == true
     
         while position > 0 && position < 100 do
-        
+            
         
         #Offensive Move Selection
         userInput = gets.chomp.to_i
@@ -33,6 +33,8 @@ while gamePlaying == true do
             puts "Your new positions is #{position += playerMove.dodge(0)}"
         end
           
+        text.enemyMoveText()
+        
     end
     #This is where the defense moves go
     
